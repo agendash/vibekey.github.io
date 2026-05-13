@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Recover your VibeKey CDKEY by email or request a manual device unlink after hardware damage." />
+  <title>Subscription | VibeKey</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="./assets/hero-home.jpg" as="image" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="page-background" aria-hidden="true">
+    <img src="./assets/hero-home.jpg" alt="" />
+    <span></span>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="./index.html" aria-label="VibeKey home">
+      <span class="brand-icon" aria-hidden="true">
+        <i data-lucide="radio-receiver"></i>
+      </span>
+      <span>VibeKey</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="./download.html">Download</a>
+      <a href="./subscription.html" aria-current="page">Subscription</a>
+      <a href="./index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero compact-page-hero" aria-labelledby="subscription-page-title">
+      <p class="eyebrow">Subscription</p>
+      <h1 id="subscription-page-title">Recover your CDKEY or request a device unlink.</h1>
+      <p class="hero-copy">
+        Use the email from checkout to receive your CDKEY again. If your VibeKey hardware is damaged,
+        send a manual unlink request for admin review.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary button-emphasis" href="./index.html#pricing">
+          <i data-lucide="shopping-bag" aria-hidden="true"></i>
+          Buy VibeKey License
+        </a>
+      </div>
+    </section>
+
+    <section class="service-grid" aria-label="Subscription actions">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <i data-lucide="mail-check"></i>
+        </div>
+        <p class="eyebrow">Real-time Email</p>
+        <h2>Find My CDKEY</h2>
+        <p>
+          Enter the email used for purchase. VibeKey sends the same CDKEY to that inbox immediately.
+        </p>
+        <form class="service-form" data-recover-form>
+          <label for="recover-email">Purchase email</label>
+          <div class="purchase-controls">
+            <input id="recover-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+            <button class="button button-primary" type="submit">
+              <i data-lucide="send" aria-hidden="true"></i>
+              Send CDKEY
+            </button>
+          </div>
+          <p class="form-note" data-recover-message>The email must match your checkout address.</p>
+        </form>
+      </article>
+
+      <article class="service-card service-card-accent">
+        <div class="service-icon" aria-hidden="true">
+          <i data-lucide="wrench"></i>
+        </div>
+        <p class="eyebrow">Manual Review</p>
+        <h2>Damaged Device Unlink</h2>
+        <p>
+          If the original hardware is broken, send an unlink request to the VibeKey admin team.
+          This is handled by email and is not processed in real time.
+        </p>
+        <form class="service-form" data-unlink-form>
+          <label for="unlink-email">Contact email</label>
+          <input id="unlink-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+
+          <label for="unlink-cdkey">CDKEY</label>
+          <input id="unlink-cdkey" name="cdkey" type="text" autocomplete="off" placeholder="VK-..." required />
+
+          <label for="unlink-note">What happened?</label>
+          <textarea id="unlink-note" name="note" rows="4" placeholder="The device was damaged and can no longer be connected."></textarea>
+
+          <button class="button button-ghost" type="submit">
+            <i data-lucide="mail-plus" aria-hidden="true"></i>
+            Email Admin
+          </button>
+          <p class="form-note" data-unlink-message>Admin review is manual; you will receive a reply by email.</p>
+        </form>
+      </article>
+    </section>
+
+    <section class="process-band" aria-labelledby="subscription-process-title">
+      <div class="section-title">
+        <h2 id="subscription-process-title">Two paths, clear expectations.</h2>
+      </div>
+      <div class="process-grid">
+        <article>
+          <span>01</span>
+          <h3>CDKEY recovery is instant</h3>
+          <p>When the email matches a purchase, the CDKEY is sent to that inbox right away.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Unlink requests are human reviewed</h3>
+          <p>Damaged-device unbinds go to the admin team so accidental license moves do not happen.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Reuse the license after approval</h3>
+          <p>After unlink approval, redeem the same CDKEY again in VibeKey on your replacement hardware.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="./index.html" aria-label="Back to VibeKey home">
+      <span class="brand-icon" aria-hidden="true"><i data-lucide="radio-receiver"></i></span>
+      <span>VibeKey</span>
+    </a>
+    <p>Your remote microphone for vibe coding.</p>
+  </footer>
+
+  <script src="./assets/lucide.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
